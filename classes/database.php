@@ -29,13 +29,7 @@ class Database
     	    self::$init = TRUE;
 
 	    	if ($umgebung == 1)
-		        $con = new PDO('mysql:host=192.168.0.199;port=3307;dbname=datenarchiv;charset=utf8', "chn", "!Jini1503!");
-
-	    	if ($umgebung == 2)
-		        $con = new PDO('mysql:host=localhost;port=3306;dbname=datenarchiv;charset=utf8', "root", "jini1503");
-		        	        
-    		if ($umgebung == 3)
-				$con = new PDO('mysql:host=db22.variomedia.de;dbname=db48930;charset=utf8', "u48930", "yGrG2LiBUPFikNAz9ZoBgqjnvkL8KX");
+		        $con = new PDO('mysql:host=192.168.0.199;port=3307;dbname=datenarchiv;charset=utf8', "test", "");
 
          	self::$conn = $con;
         } catch (PDOException $ex)
